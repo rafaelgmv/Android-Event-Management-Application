@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F1F1F"
+
+    >
+
+    <TextView
+        android:id="@+id/txtTituloSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/amiko"
+        android:text="Crie a sua conta"
+        android:textColor="#F06A02"
+        android:textSize="28sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/chkAdmin"
+        android:layout_width="123dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/amiko"
+        android:text="Admin"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/txtPasswordSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/txtPasswordSignUp" />
+
+    <Button
+        android:id="@+id/btnCriarConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#F06A02"
+        android:text="Criar conta"
+        app:layout_constraintEnd_toEndOf="@+id/txtPasswordSignUp"
+        app:layout_constraintStart_toStartOf="@+id/txtPasswordSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/chkAdmin" />
+
+    <TextView
+        android:id="@+id/txtVoltarAutenticacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/amiko"
+        android:text="Regressar para a autenticação"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="#F06A02"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnCriarConta"
+        app:layout_constraintStart_toStartOf="@+id/btnCriarConta"
+        app:layout_constraintTop_toBottomOf="@+id/btnCriarConta" />
+
+    <EditText
+        android:id="@+id/txtEmailSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#F06A02"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/txtNomeSignUp"
+        app:layout_constraintStart_toStartOf="@+id/txtNomeSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/txtNomeSignUp" />
+
+    <EditText
+        android:id="@+id/txtPasswordSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#F06A02"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/txtEmailSignUp"
+        app:layout_constraintStart_toStartOf="@+id/txtEmailSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailSignUp" />
+
+    <EditText
+        android:id="@+id/txtNomeSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="text"
+        android:textColor="#F06A02"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/txtTituloSignUp"
+        app:layout_constraintStart_toStartOf="@+id/txtTituloSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloSignUp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

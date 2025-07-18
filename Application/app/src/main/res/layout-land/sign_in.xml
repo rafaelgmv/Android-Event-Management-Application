@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F1F1F"
+
+    >
+
+    <TextView
+        android:id="@+id/txtTituloSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/amiko"
+        android:text="Bem-vindo"
+        android:textColor="#F06A02"
+        android:textSize="30dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnIniciarSessao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#F06A02"
+        android:text="Iniciar sessão"
+        app:layout_constraintEnd_toEndOf="@+id/txtPasswordSignIn"
+        app:layout_constraintStart_toStartOf="@+id/txtPasswordSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/txtPasswordSignIn" />
+
+    <TextView
+        android:id="@+id/txtEfetuarRegisto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/amiko"
+        android:text="Ainda não tem conta? Registe-se"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="#F06A02"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnIniciarSessao"
+        app:layout_constraintStart_toStartOf="@+id/btnIniciarSessao"
+        app:layout_constraintTop_toBottomOf="@+id/btnIniciarSessao" />
+
+    <EditText
+        android:id="@+id/txtEmailSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#F06A02"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/txtTituloSignIn"
+        app:layout_constraintStart_toStartOf="@+id/txtTituloSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloSignIn" />
+
+    <EditText
+        android:id="@+id/txtPasswordSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#F06A02"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/txtEmailSignIn"
+        app:layout_constraintStart_toStartOf="@+id/txtEmailSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailSignIn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

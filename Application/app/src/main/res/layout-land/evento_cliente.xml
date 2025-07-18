@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F1F1F"
+    >
+
+    <TextView
+        android:id="@+id/txtTituloInserirEven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/amiko"
+        android:text="Evento"
+        android:textColor="#F06A02"
+        android:textSize="20dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />/>
+
+    <TextView
+        android:id="@+id/txtDescricaoEven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:text="Descrição"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/txtTipoEven"
+        app:layout_constraintTop_toBottomOf="@+id/txtTipoEven" />
+    
+    <TextView
+        android:id="@+id/txtTipoEven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo"
+        android:textColor="#FFFFFF"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:popupBackground="#1F1F1F"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloInserirEven"  />
+
+    <TextView
+        android:id="@+id/txtLocalEven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:fontFamily="@font/amiko"
+        android:textColorHint="@color/white"
+        android:textColor="#F06A02"
+        android:hint="Local"
+        app:layout_constraintBottom_toBottomOf="@+id/txtDescricaoEven"
+        app:layout_constraintStart_toEndOf="@+id/txtDescricaoEven" />
+
+    <TextView
+        android:id="@+id/btnDataEven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/baseline_calendar_today_24"
+        android:fontFamily="@font/amiko"
+        android:hint="Data do evento"
+        android:textColor="#F06A02"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/txtDescricaoEven"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescricaoEven" />
+
+    <TextView
+        android:id="@+id/btnHoraEven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/baseline_timer_24"
+        android:hint="Hora do evento"
+        android:textColor="#F06A02"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDataEven"
+        app:layout_constraintStart_toStartOf="@+id/btnHoraLimiteEven" />
+
+    <TextView
+        android:id="@+id/btnDataLimiteEven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/baseline_calendar_today_24"
+        android:fontFamily="@font/amiko"
+        android:hint="Data limite de inscrição"
+        android:textColor="#F06A02"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/btnDataEven"
+        app:layout_constraintTop_toBottomOf="@+id/btnDataEven" />
+
+    <TextView
+        android:id="@+id/btnHoraLimiteEven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/baseline_timer_off_24"
+        android:fontFamily="@font/amiko"
+        android:hint="Hora do evento"
+        android:textColor="#F06A02"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDataLimiteEven"
+        app:layout_constraintStart_toEndOf="@+id/btnDataLimiteEven" />
+
+    <TextView
+        android:id="@+id/txtNrLugaresEven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:fontFamily="@font/amiko"
+        android:inputType="numberSigned"
+        android:hint="Número de lugares"
+        android:textColor="#F06A02"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/txtLocalEven"
+        app:layout_constraintStart_toEndOf="@+id/txtLocalEven" />
+
+    <TextView
+        android:id="@+id/chkGratuidadeEven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/amiko"
+        android:text="Gratuidade"
+        app:layout_constraintBottom_toBottomOf="@+id/btnHoraEven"
+        app:layout_constraintStart_toEndOf="@+id/btnHoraEven" />
+
+    <TextView
+        android:id="@+id/txtPrecoEven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:fontFamily="@font/amiko"
+        android:hint="Preço €"
+        android:inputType="numberDecimal"
+        android:textColor="#F06A02"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/btnHoraLimiteEven"
+        app:layout_constraintStart_toStartOf="@+id/chkGratuidadeEven"
+        app:layout_constraintTop_toBottomOf="@+id/chkGratuidadeEven" />
+
+    <Button
+        android:id="@+id/btnInserirEven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#F06A02"
+        android:text="Comprar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#55CACACA"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="@+id/btnInserirEven"
+        app:layout_constraintEnd_toStartOf="@+id/btnInserirEven"  />
+    
+</androidx.constraintlayout.widget.ConstraintLayout>

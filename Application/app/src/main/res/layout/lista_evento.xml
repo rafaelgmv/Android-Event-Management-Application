@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/transparent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start">
+
+        <ImageView
+            android:id="@+id/imgTipoLista"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/baseline_image_not_supported_24" />
+
+        <TextView
+            android:id="@+id/txtTipoLista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Tipo inexistente"
+            android:textSize="18dp"
+            android:textColor="#F06A02"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtDescricaoLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Não há descrição disponível"
+        android:textSize="14dp"
+        android:textColor="@color/white" />
+
+
+    <TextView
+        android:id="@+id/txtLocalLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Sem local definido"
+        android:textSize="14dp"
+        android:textColor="@color/white" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:id="@+id/imgDataLista"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/baseline_calendar_today_24" />
+
+        <TextView
+            android:id="@+id/txtDataLista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Sem data definida"
+            android:textSize="16dp"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/imgHoraLista"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            app:srcCompat="@drawable/baseline_timer_24" />
+
+        <TextView
+            android:id="@+id/txtHoraLista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Sem hora definida"
+            android:textSize="16dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llPrecoLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:layout_marginTop="8dp">
+
+
+        <ImageView
+            android:id="@+id/imgPrecoLista"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/baseline_attach_money_24" />
+
+        <TextView
+            android:id="@+id/txtPrecoLista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Gratuito"
+            android:textSize="16dp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnCancelarCompra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancelar compra"
+        android:layout_marginTop="13dp"
+        android:visibility="gone"
+        android:backgroundTint="#F06A02" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="#F06A02" />
+
+
+
+</LinearLayout>
