@@ -173,6 +173,16 @@ Utilize the checkboxes and dropdown menu on the homepage to apply filters to the
 
 ## Results
 
+![homepage](https://github.com/rafaelgmv/Android-Event-Management-Application/blob/main/img/Captura%20de%20ecr%C3%A3%202025-07-18,%20%C3%A0s%2018.13.10.png?raw=true)
+
+![insertEvent](https://github.com/rafaelgmv/Android-Event-Management-Application/blob/main/img/Captura%20de%20ecr%C3%A3%202025-07-18,%20%C3%A0s%2018.13.29.png?raw=true)
+
+![listEvents](https://github.com/rafaelgmv/Android-Event-Management-Application/blob/main/img/Captura%20de%20ecr%C3%A3%202025-07-18,%20%C3%A0s%2018.14.02.png?raw=true)
+
+![editEvent](https://github.com/rafaelgmv/Android-Event-Management-Application/blob/main/img/Captura%20de%20ecr%C3%A3%202025-07-18,%20%C3%A0s%2018.14.28.png?raw=true)
+
+![buyTicket](https://github.com/rafaelgmv/Android-Event-Management-Application/blob/main/img/Captura%20de%20ecr%C3%A3%202025-07-18,%20%C3%A0s%2018.14.47.png?raw=true)
+
 
 ---
 #### License
